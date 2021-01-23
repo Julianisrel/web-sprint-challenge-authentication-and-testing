@@ -18,8 +18,8 @@ server.use(session({
 	}),
 }))
 
-const authenticate = require('../auth/authenticate-middleware.js');
-const authRouter = require('../auth/auth-router.js');
+const authenticate = require('../database/auth/authenticate-middleware.js');
+const authRouter = require('../database/auth/auth-router.js');
 const jokesRouter = require('../jokes/jokes-router.js');
 
 
